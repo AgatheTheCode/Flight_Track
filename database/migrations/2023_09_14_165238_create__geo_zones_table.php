@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('geo_zones', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('code_ge', 32)->unique();
+            $table->string('code_geo', 32)->unique();
             $table->string('name', 255);
         });
     }
